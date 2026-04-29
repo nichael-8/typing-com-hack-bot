@@ -14,6 +14,7 @@
     } else {
         var s = document.createElement('script');
         s.src = 'https://code.jquery.com/jquery-3.5.1.min.js';
+        s.crossOrigin = 'anonymous';
         s.onload = function () { run(jQuery); };
         document.head.appendChild(s);
     }
